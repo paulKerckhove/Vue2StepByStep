@@ -15,7 +15,7 @@
 
       <input id='input' type="text" v-model='newName'>
 
-      <button v-onclick='addName'>Add name</button>
+      <button @click='addName'>Add name</button>
 
     </div>
 
@@ -36,6 +36,10 @@
           }
         }
 
+
+
+
+        // This part is replaced by the method
         // mounted() {
         //   document.querySelector('#button').addEventListener('click', () => {
         //
