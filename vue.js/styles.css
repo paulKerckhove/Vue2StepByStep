@@ -50,10 +50,10 @@ html {
   background:none;
   border:0;
   line-height:1;
-  color:white;
+  color: #444444;
   text-align: center;
   outline:0;
-  padding: 10;
+  margin: 10px;
   cursor:pointer;
   max-width:50px;
 }
@@ -68,7 +68,7 @@ html {
 }
 
 .player__controls {
-  display:flex;
+  display: flex;
   position: absolute;
   bottom:0;
   width: 100%;
@@ -79,8 +79,21 @@ html {
   z-index: 2147483647;
 }
 
+
+/* Fullscreen button */
 .player__fullscreen {
-margin-left: 150px;
+  top: 15px;
+  right: 5px;
+  position: absolute;
+  cursor: pointer;
+  padding-top: 3px;
+}
+
+.player__subtitles {
+  position: absolute;
+  right: 50px;
+  top: 17px;
+  cursor:pointer;
 }
 
 .player:hover .player__controls {
@@ -108,7 +121,7 @@ margin-left: 150px;
 
 .progress__filled {
   width:10%;
-  background: #64B5F6;
+  background: #1E88E5;
   flex:0;
   flex-basis:50%;
 }

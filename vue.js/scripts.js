@@ -43,6 +43,7 @@ function goFullscreen(player) {
   if (element.mozRequestFullScreen) {
     element.mozRequestFullScreen();
   } else if (element.webkitRequestFullScreen) {
+    console.log("YES");
     element.webkitRequestFullScreen();
   }
 }
